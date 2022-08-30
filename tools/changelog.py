@@ -42,4 +42,4 @@ e3061132 Remove vendor folder (#1288)
 g = ChangelogGenerator("you_org/your_repo")
 for pr_match in re.finditer(r"#(\d+)", payload):
     pr_id = int(pr_match.group(1))
-    print("* {}".format(g.generate(pr_id)))
+    print(f"* {g.generate(pr_id)}")
